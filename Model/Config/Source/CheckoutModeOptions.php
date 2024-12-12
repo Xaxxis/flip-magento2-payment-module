@@ -14,8 +14,7 @@ class CheckoutModeOptions implements OptionSourceInterface
     public function toOptionArray(): array
     {
         return [
-            ['redirect' => 1, 'label' => __('Redirect Mode')],
-            ['popup' => 2, 'label' => __('Popup Mode')]
+            ['value' => 1, 'label' => __('Redirect')],
         ];
     }
 
@@ -27,8 +26,7 @@ class CheckoutModeOptions implements OptionSourceInterface
     public function toArray(): array
     {
         return [
-            1 => __('Redirect Mode'),
-            2 => __('Popup Mode')
+            1 => __('Redirect'),
         ];
     }
 }
